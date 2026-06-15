@@ -99,7 +99,7 @@ export function Order() {
             <p className="text-xl text-slate-500 leading-relaxed mb-12">
               Ceritakan kebutuhan engineering Anda. Semakin detail informasi yang Anda berikan, semakin akurat penawaran awal kami.
             </p>
-            
+
             <div className="space-y-8">
               {[
                 { title: 'Peninjauan', desc: 'Engineer kami menganalisis kebutuhan dan kelayakan proyek Anda.' },
@@ -107,7 +107,7 @@ export function Order() {
                 { title: 'Eksekusi', desc: 'Setelah disetujui, kami memulai proses desain dan fabrikasi.' },
               ].map((step, i) => (
                 <div key={i} className="flex gap-6">
-                  <div className="text-2xl font-bold text-brand-blue font-mono">0{i+1}</div>
+                  <div className="text-2xl font-bold text-brand-blue font-mono">0{i + 1}</div>
                   <div>
                     <h3 className="font-bold uppercase mb-1 text-[#1a2b56]">{step.title}</h3>
                     <p className="text-sm text-slate-500">{step.desc}</p>
@@ -127,9 +127,11 @@ export function Order() {
                   onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-brand-blue outline-none transition-all"
                 >
-                  <option>Desain CAD 3D</option>
-                  <option>Gambar Teknik</option>
-                  <option>Fabrikasi Mekanik</option>
+                  <option>ENGINEERING DESIGN</option>
+                  <option>ENGINEERING ANALYSIS </option>
+                  <option>REVERSE ENGINEERING</option>
+                  <option>FABRICATION & PROTOTYPING</option>
+                  <option>ENGINEERING CONSULTATION</option>
                 </select>
               </div>
 
